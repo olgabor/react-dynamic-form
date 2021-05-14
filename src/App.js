@@ -15,6 +15,9 @@ const App = () => {
   const [checkbox, setCheckbox] = useState(false);
 
   const handleParentalConsent = (value) => {
+    { 
+      // Takes date submitted by form and returns Bool 
+    } 
     const now = new Date();
     return (
       value >= new Date(now.getFullYear() - 13, now.getMonth(), now.getDate())
@@ -22,12 +25,18 @@ const App = () => {
   };
 
   const handleSubmit = (event) => {
+    { 
+      // Returns an object containing the data form & resets the form on submission 
+    } 
     event.preventDefault();
     console.log(inputField);
     event.target.reset();
   };
 
   const handleInputChange = (index, event) => {
+    { 
+      // Updates setCheckbox  & setValue states from data fields  
+    } 
     event.target.name === "date_of_birth" &&
     handleParentalConsent(new Date(event.target.value))
       ? setCheckbox(true)
@@ -60,6 +69,9 @@ const App = () => {
                   </div>
                 </Fragment>
               ))}
+              { 
+                // Sets parental consent checkbox based on checkbox state value 
+              } 
             {checkbox ? (
               <Fragment>
                 <div>
