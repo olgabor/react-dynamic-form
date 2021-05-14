@@ -1,14 +1,14 @@
 export const data = [
     {
         "tag": "input",
-          "name": "first_name",
+        "name": "first_name",
         "type": "text",
-          "human_label": "First Name"
+        "human_label": "First Name"
       }, {
         "tag": "input",
         "name": "last_name",
         "type": "text",
-          "human_label": "Last Name"
+        "human_label": "Last Name"
       }, {
         "tag": "input",
         "name": "email",
